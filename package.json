@@ -1,7 +1,7 @@
 {
   "name": "hapi-plugin-mongoose",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple plugin for hapi to connect mongoDB by mongoose,you just define your schema.",
   "main": "lib/index.js",
   "scripts": {
     "prepublish": "npm run compile",
@@ -10,11 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/coojee2012/hapi-plugin-moongose.git"
+    "url": "https://github.com/coojee2012/hapi-plugin-mongoose.git"
   },
   "keywords": [
     "hapi",
-    "common",
+    "hapi-plugin",
+    "common tools",
     "mongoDB",
     "mongoose"
   ],

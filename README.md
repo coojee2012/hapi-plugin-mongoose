@@ -14,7 +14,27 @@ npm install hapi-plugin-mongoose
 ```js
 require('babel-polyfill'); // In your main prgrams where should use this module
 ```
-#### pass your mongoose schema
+#### pass your mongoose schema by hapi plugin options
+##### 1. In schema.js
+```js
+import Mongoose from 'mongoose';
+
+const Test = new Mongoose.Schema({...
+export  {tests:Test}
+```
+##### 2. In your app
+```js
+import Hapi from 'hapi';
+import * as MongoModels from 'hapi-plugin-mongoose';
+import * as models from './schema';
+const server = new Hapi.Server();
+server.register([
+  {
+    register: MongoModels,
+    options: {models,uris:''},
+  }
+])
+```
 
 ## License
 
