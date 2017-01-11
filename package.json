@@ -1,6 +1,6 @@
 {
   "name": "hapi-plugin-mongoose",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple plugin for hapi to connect mongoDB by mongoose,you just define your schema.",
   "main": "lib/index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "license": "Apache 2.0",
   "dependencies": {
     "babel-polyfill": "^6.13.0",
-    "mongoose": "^4.6.0",
+    "mongoose": "^4.7.6",
     "sanitize-html": "^1.13.0"
   },
   "devDependencies": {
